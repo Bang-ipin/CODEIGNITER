@@ -1,0 +1,1 @@
+[06-Apr-2017 22:44:02 Asia/Jakarta] PHP Fatal error:  Call to a member function data() on a non-object in /home/gofg6544/public_html/TA/application/controllers/beranda/Home.php on line 14

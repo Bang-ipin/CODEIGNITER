@@ -1,0 +1,27 @@
+#body{
+	background:url('../asset/image/mainbg.png');
+	background-size:cover;
+}
+.login-panel{
+	margin:auto;
+	margin-top:90px;
+	width:350px;
+	}
+.panel-body{
+	margin-bottom:20px;
+	height:300px;
+	opacity:0.8;
+}
+.login-panel img{
+	margin-bottom:10px;
+	width:300px;
+}
+
+.login-panel  > .panel{
+	padding:10px;
+}
+
+@media screen and (max-width:768px) {
+	.table-responsive {
+		overflow: auto;
+	}

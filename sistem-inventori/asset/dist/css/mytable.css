@@ -1,0 +1,42 @@
+@charset "utf-8";
+body { 
+margin:0; 
+padding:0; 
+width:100%; 
+background:rgba(21, 98, 239, 0.24); 
+}
+html { padding:0; margin:0;}
+
+table{
+	width:100%;
+	font-size:10pt;
+	}
+.tabel-responsive{
+	width:100%;
+	height:346px;
+	min-height: .01%;
+    overflow-x: auto;
+	overflow-y: scroll;
+	}
+ th{
+	background:#3e83c9;
+	color:#fff;
+	padding:5px;
+	font-weight:bold;
+	text-align:center;
+	border-right:1px solid #fff;
+	line-height:1.5em;
+} 
+td{
+	padding:5px 5px;
+	text-align:center;
+	}
+td*{
+	padding:5px 5px;
+	}
+tr.alt td{
+	background:#ffffff;
+	}
+tr.over td,  tr:hover td{
+	background:#fece2f;
+}
