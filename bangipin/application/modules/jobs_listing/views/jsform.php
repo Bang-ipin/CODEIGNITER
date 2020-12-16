@@ -1,0 +1,36 @@
+<script src="<?=base_url('assets/plugins/tinymce/tinymce.min.js');?>" type="text/javascript" ></script>
+		<script src="<?=base_url('assets/plugins/tinymce/jquery.tinymce.min.js');?>" type="text/javascript" ></script>
+		<script src="<?=base_url('assets/plugins/select2/js/select2.min.js');?>" type="text/javascript" ></script>
+		<script src="<?=base_url('assets/plugins/jquery.validate.min.js');?>" type="text/javascript"  ></script>
+		<script src="<?=base_url('assets/plugins/jquery-tags-input/jquery.tagsinput.min.js');?>" type="text/javascript"  ></script>
+		<script src="<?=base_url('assets/plugins/bootstrap-fileinput/bootstrap-fileinput.js');?>" type="text/javascript" ></script>
+		<script src="<?=base_url('assets/plugins/bootstrap-touchspin/bootstrap.touchspin.js');?>" type="text/javascript" ></script>
+		<script src="<?=base_url('assets/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js');?>" type="text/javascript" ></script>
+		<script src="<?=base_url('assets/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js');?>" type="text/javascript" ></script>
+		<script src="<?=base_url('assets/admin/js/komponen.js');?>" type="text/javascript"></script>
+		<script src="<?=base_url('assets/admin/js/validateform.js');?>" type="text/javascript"></script>
+		<script src="<?=base_url('assets/admin/js/tinymce.js');?>" type="text/javascript"></script>
+		<script>
+			$(document).ready(function(){
+				$('#bataswaktu').datetimepicker({
+					lang:'en',
+					timepicker:false,
+					format:'dd-mm-yyyy',
+					closeOnDateSelect:true,
+					showAnim:'slide',
+				});
+			});
+			$(document).ready(function(){
+				$('#destination').change(function(){
+					var prov = $('#destination').val();
+					$.ajax({
+						type : 'GET',
+						url : '<?=site_url('jobs_listing/jobs/get_kabupaten');?>',
+						data :  'prov_id=' + prov,
+						success: function (data) {
+							$("#kabupatenkota").html(data);
+						}
+					});
+				});
+			});
+		</script>

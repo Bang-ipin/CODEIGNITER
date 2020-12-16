@@ -1,0 +1,6 @@
+{
+    "require": {
+        "dompdf/dompdf": "^0.8.5",
+        "chriskacerguis/codeigniter-restserver": "^3.1"
+    }
+}
